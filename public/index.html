@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    <p>
-        Hi
-    </p>
-    <a href="https://www.google.bg/?gfe_rd=cr&ei=200rWZa9DtLi8Ae92JmwDQ">google</a>
 
+<body>
+    <header>
+        <div class="menu">
+            <img src="./css/Media/logo_sm.png" class="logoTop">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Customization</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Demo</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="bird-box">
+        <div class="bird-logo"></div>
+        <!--<div class="title">
+            <span>the</span>
+            <span>Slifer</span>
+        </div>-->
+    </div>
+
+
+    <div class="scroll"></div>
+
+
+    <canvas class="particles"></canvas>
+
+    <!--Libs-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
+
+    <!--Scripts-->
+    <script src="./js/libs.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
+
 </html>
