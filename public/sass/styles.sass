@@ -1,6 +1,11 @@
 @import vars
 @import mixins
 
+//Components
+@import components/header
+@import components/features
+@import components/admin-panel
+
 body
     margin: 0
     font-family: $font-stack
@@ -8,82 +13,9 @@ body
     line-height: $primary-line-height
     color: $primary-color
 
-.bird-box
-    min-height: 100%
-    width: 100%
-    height: auto
+.wrapper
     position: absolute
-    top: 0
-    left: 0
-    background: 
-        image: url(./Media/homepage_background.jpg)
-        position: center 
-        attachment: fixed
-        repeat: no-repeat
-        size: cover
-    overflow: hidden
-
-.bird-logo
-    position: absolute
-    height: 400px
     width: 100%
-    opacity: 1
-    background: 
-        image: url(./Media/logo.png)
-        repeat: no-repeat
-        position: center
-        size: auto 400px
-    top: 50px
-    z-index: 9
+    top: 100%
 
-.title
-    color: #fff
-    font-size: 10em
 
-.particles
-    position: fixed
-    display: block
-    top: 0
-    left: 0
-    z-index: 0
-    width: 100%
-    height: 650px !important
-
-.scroll
-    height: 2000px
-
-.menu
-    top: 0
-    position: fixed
-    font-weight: bold
-    opacity: 0.75
-    border-bottom: 1px solid hsla(0,0%,100%,.25)
-    width: 100%
-    padding: 2%
-    z-index: 999
-    ul
-        list-style-type: none
-        float: right
-        margin-right: 10%
-        li
-            display: inline-block
-            text-transform: uppercase
-            padding: 1px 20px
-        a
-            text-decoration: none
-            color: #fff
-            &:hover
-                color: #03fbca
-    img
-        float: left
-        height: 40px
-        margin-left: 40px
-        margin-top: 5px
-
-.sticky-header
-    background-color: #fff
-    opacity: 1
-    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2)
-    padding: 0.3%
-    a
-        color: #a1b1bc !important
