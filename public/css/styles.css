@@ -38,7 +38,7 @@
   height: 650px !important; }
 
 .scroll {
-  height: 2000px; }
+  height: 8000px; }
 
 .menu {
   top: 0;
@@ -105,22 +105,112 @@
   color: #fff;
   margin-top: -40px; }
 
-.admin-panel {
+.admin-panel, .customization, .design, .contact-us {
   text-align: center; }
-  .admin-panel h2 {
+  .admin-panel h2, .customization h2, .design h2, .contact-us h2 {
     font-size: 36px;
     font-weight: 400; }
-  .admin-panel .border {
+  .admin-panel .border, .customization .border, .design .border, .contact-us .border {
     width: 100px;
     border-top: 1px solid #21c2f8;
     margin: 0 auto; }
-  .admin-panel .description {
+  .admin-panel .description, .customization .description, .design .description, .contact-us .description {
     color: #777;
     margin: 0 auto;
     line-height: 32px;
     font-size: 18px;
     max-width: 800px;
     margin-top: 25px; }
+  .admin-panel img, .customization img, .design img, .contact-us img {
+    width: 100%; }
+
+.customization {
+  height: 865px;
+  width: 100%;
+  margin-top: 100px;
+  color: #fff !important;
+  padding-top: 100px;
+  background-image: url(./Media/bg-customization.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .customization .border {
+    border-top-color: #fff; }
+  .customization .description {
+    color: #fff; }
+  .customization .customization-images-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+    color: #fff; }
+    .customization .customization-images-wrapper h4 {
+      font-size: 18px; }
+  .customization .customization-image {
+    width: 360px;
+    height: 390px; }
+  .customization .customization-images-description {
+    width: 360px; }
+
+.design {
+  margin-top: 100px; }
+  .design .description {
+    max-width: 100%; }
+  .design img {
+    margin-top: 50px; }
+
+.parallax-image {
+  width: 100%;
+  height: 455px;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 50px;
+  background-image: url(./Media/bg-parallax.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallax-image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff; }
+  .parallax-image-text h2 {
+    text-transform: uppercase;
+    font-size: 85px;
+    margin-bottom: 0; }
+  .parallax-image-text p {
+    font-size: 36px; }
+  .parallax-image-text .btn {
+    width: 230px;
+    height: 65px;
+    padding: 3px 3px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .parallax-image-text .btn a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px; }
+
+.footer {
+  margin-top: 505px;
+  width: 100%; }
+
+.contact-us {
+  color: #fff;
+  height: 240px;
+  background-color: #21c2f8;
+  display: flex;
+  flex-direction: column; }
+  .contact-us .description {
+    color: #fff;
+    margin-top: 0; }
 
 body {
   margin: 0;
