@@ -63,3 +63,40 @@
 
 .input-wrapper
     position: relative
+    margin-bottom: 15px
+    input
+        color: #fff
+    input::-webkit-input-placeholder
+        color: #979797
+
+textarea
+    @extend input
+    height: 120px !important
+    max-width: 400px
+    padding-top: 5px
+
+.btn-wrapper
+    .btn
+        +btn
+        width: 420px
+        height: 40px
+        border-radius: 5px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: bold
+        &:hover
+            background: $hover-primary-color
+
+.copyright
+    width: 100%
+    height: 90px
+    background: #1a1c27
+    color: #a1b1bc
+    border-top: 1px solid #53545c
+    display: flex
+    align-items: center
+    span
+        color: #21bdd0
+    p
+        margin-left: 15px

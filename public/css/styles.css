@@ -196,6 +196,9 @@
       text-decoration: none;
       color: #fff;
       font-size: 18px; }
+    .parallax-image-text .btn:hover {
+      background: #45cdfe;
+      border-color: #45cdfe; }
 
 .footer {
   margin-top: 505px;
@@ -240,7 +243,7 @@
 .form {
   margin-top: 17px;
   width: 400px; }
-  .form input {
+  .form input, .form textarea {
     border: 1px solid #979797;
     background: transparent;
     height: 40px;
@@ -248,7 +251,7 @@
     position: relative;
     padding-left: 10px;
     padding-right: 5px; }
-    .form input:focus {
+    .form input:focus, .form textarea:focus {
       outline: 0;
       box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
   .form i {
@@ -258,7 +261,51 @@
     font-size: 20px; }
 
 .input-wrapper {
-  position: relative; }
+  position: relative;
+  margin-bottom: 15px; }
+  .input-wrapper input, .input-wrapper textarea {
+    color: #fff; }
+  .input-wrapper input::-webkit-input-placeholder, .input-wrapper textarea::-webkit-input-placeholder {
+    color: #979797; }
+
+textarea {
+  height: 120px !important;
+  max-width: 400px;
+  padding-top: 5px; }
+
+.btn-wrapper .btn {
+  background: #08f8cc;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #08f8cc 0%, #21ebd9 32%, #3bdde6 53%, #64c8fa 64%, #64c8fa 99%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #08f8cc 0%, #21ebd9 32%, #3bdde6 53%, #64c8fa 64%, #64c8fa 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #08f8cc 0%, #21ebd9 32%, #3bdde6 53%, #64c8fa 64%, #64c8fa 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08f8cc', endColorstr='#64c8fa',GradientType=1 );
+  /* IE6-9 */
+  width: 420px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold; }
+  .btn-wrapper .btn:hover {
+    background: #03fbca; }
+
+.copyright {
+  width: 100%;
+  height: 90px;
+  background: #1a1c27;
+  color: #a1b1bc;
+  border-top: 1px solid #53545c;
+  display: flex;
+  align-items: center; }
+  .copyright span {
+    color: #21bdd0; }
+  .copyright p {
+    margin-left: 15px; }
 
 body {
   margin: 0;
