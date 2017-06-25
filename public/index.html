@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./node_modules/hover.css/css/hover-min.css">
 </head>
 
 <body>
@@ -194,21 +195,36 @@
                         <i class="ion-email"></i>
                         Email: example@example.com
                     </p>
+                    <div class="social-links">
+                        <span>Or...</span>
+                        <a href="#" class="social-link">
+                            <i class="ion-social-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="ion-social-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="ion-social-pinterest-outline"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="ion-social-linkedin-outline"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="form">
                     <div class="input-wrapper">
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" id="input-name">
                         <i class="ion-person form-control-feedback"></i>
                     </div>
                     <div class="input-wrapper">
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" id="input-email">
                         <i class="ion-email form-control-feedback"></i>
                     </div>
                     <div class="input-wrapper">
-                        <textarea type="text" placeholder="Message"> </textarea>
+                        <textarea type="text" placeholder="Message" id="input-message"> </textarea>
                     </div>
                     <div class="btn-wrapper">
-                        <div class="btn">
+                        <div class="btn" id="btn">
                             Send
                         </div>
                     </div>
