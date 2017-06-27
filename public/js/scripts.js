@@ -14,7 +14,15 @@ $(document).scroll(function(){
     if (scrollTop == 0){
         menu.removeClass('sticky-header');
         logoTop.attr('src', './css/Media/logo_sm.png');
-    } 
+    }
+
+    var pContainerHeight = $('.bird-box').height();
+    if (scrollTop <= pContainerHeight){
+        $('.title').css({
+            'transform' : 'translate(0px, '+ scrollTop /3 +'%)'
+        }); 
+    }
+    
 })
 
 var msgBtn = document.getElementById('btn');
