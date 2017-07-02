@@ -6,3 +6,11 @@ window.onload = function() {
     speed: 0.3
   });
 };
+
+$.extend($.scrollTo.defaults, {
+  duration: 1100,
+  margin: true,
+  over: {
+    top: -0.2
+  }
+});

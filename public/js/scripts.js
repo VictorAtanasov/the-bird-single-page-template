@@ -38,6 +38,40 @@ function validateInputs (inputName,inputEmail,inputMessage){
 
 msgBtn.addEventListener('click', function(){
     validateInputs(inputName,inputEmail,inputMessage);
-    //console.log(inputMessage.value)
 });
+
+var featuresBtn = $('.featuresBtn');
+var customizationBtn = $('#customization');
+var homeBtn = $('#home');
+var supportBtn = $('#support');
+var demoBtn = $('#demo');
+var contactsBtn = $('#contacts');
+
+
+
+featuresBtn.on('click', function(){
+    $.scrollTo('#features')
+})
+
+customizationBtn.on('click', function(){
+    $.scrollTo('.customization', {over: {top: 0.1}})
+})
+
+homeBtn.on('click', function(){
+    $.scrollTo('.header')
+})
+
+supportBtn.on('click', function(){
+    $.scrollTo('.design', {over: {top: 0}})
+})
+
+demoBtn.on('click', function(){
+    $.scrollTo('.parallax-image', {over: {top: 0.01}})
+})
+
+contactsBtn.on('click', function(){
+    $.scrollTo('.contact-us')
+})
+
+
 

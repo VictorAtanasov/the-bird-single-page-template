@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./node_modules/hover.css/css/hover-min.css">
+    
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="menu">
             <img src="./css/Media/logo_sm.png" class="logoTop">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Management</a></li>
-                <li><a href="#">Customization</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Demo</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li id="home" class="menu-items">Home</li>
+                <li class="featuresBtn menu-items">Management</li>
+                <li id="customization" class="menu-items">Customization</li>
+                <li id="support" class="menu-items">Support</li>
+                <li id="demo" class="menu-items">Demo</li>
+                <li id="contacts" class="menu-items">Contacts</li>
+                <li id="hamburger-icon"><i class="ion-navicon-round"></i></li>
             </ul>
         </div>
     </header>
@@ -39,7 +41,7 @@
 
     <div class="wrapper">
 
-        <div class="features">
+        <div class="features" id="features">
             <div class="icon-wraper">
                 <div class="icon">
                     <i class="ion-ios-infinite-outline lime"></i>
@@ -244,6 +246,7 @@
 
     <!--Libs-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
 
     <!--Scripts-->
