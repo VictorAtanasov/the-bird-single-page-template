@@ -73,5 +73,14 @@ contactsBtn.on('click', function(){
     $.scrollTo('.contact-us')
 })
 
+var closebtn = document.querySelectorAll('.closebtn')[0];
+var hamburgerIcon = document.getElementById('hamburger-icon');
+var mySidenav = document.getElementById('mySidenav');
 
+hamburgerIcon.addEventListener('click', function(){
+    mySidenav.style.width = '250px';
+})
 
+closebtn.addEventListener('click', function(){
+    mySidenav.style.width = 0
+})
