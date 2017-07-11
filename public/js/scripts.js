@@ -41,11 +41,11 @@ msgBtn.addEventListener('click', function(){
 });
 
 var featuresBtn = $('.featuresBtn');
-var customizationBtn = $('#customization');
-var homeBtn = $('#home');
-var supportBtn = $('#support');
-var demoBtn = $('#demo');
-var contactsBtn = $('#contacts');
+var customizationBtn = $('.customization-btn');
+var homeBtn = $('.home-btn');
+var supportBtn = $('.support-btn');
+var demoBtn = $('.demo-btn');
+var contactsBtn = $('.contacts-btn');
 
 
 
